@@ -1,0 +1,13 @@
+schema {
+query: Query
+}
+
+type Query {
+getAllApps: [App]
+getAppById(id: String): App
+}
+
+type App {
+id: String
+name: String
+}
